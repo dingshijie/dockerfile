@@ -23,6 +23,6 @@ ENV CATALINA_HOME /home/apache-tomcat-7.0.62
 EXPOSE 8080
 
 #设置tomcat 自启动
-CMD /home/apache-tomcat-7.0.62/bin/catalina.sh run
+ENTRYPOINT [ "/home/apache-tomcat-7.0.62/bin/catalina.sh", "run" ]
 
 
